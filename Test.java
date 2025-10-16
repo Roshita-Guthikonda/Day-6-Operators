@@ -44,7 +44,4 @@ public class Test {
 }
 
 
-//even or odd
-//leap year or not leap year
-//number is positive or not
-//number is divisible by 5 or not
+
