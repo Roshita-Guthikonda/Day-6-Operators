@@ -1,0 +1,159 @@
+Day 6: Operators
+=========================================
+Operator is a symbol that represents a specific operation on one or more operands.
+
+Ex: a+b ---> a and b are called operands , + is called an operator.
+
+Java supports different types of operators such as:
+
+1)Arithmetic operators
+2)String concatenation operator(+)
+3)Increment and Decrement operators
+4)Relational operators
+5)Bitwise operators
+6)Logical operators
+7)Assignment operators
+8)Ternary or conditional operators(?)
+
+
+1)Arithmetic operators:
+------------------------
++,-,*,/,%
+
+=>If we apply any arithmetic operation between two variables a & b ,the result type is always max(int, type of a, type of b).
+
+Ex:-
+======
+byte + byte=int
+byte + short=int
+short + short=int
+short + long=long
+double + float=double
+int + double=double
+char + char=int
+char + int=int
+char + double=double
+
+System.out.println('a' + 'b'); //output : 195
+System.out.println('a'+ 1); //output : 98
+System.out.println('a'+ 1.2); //output : 98.2
+
+
+2)String concatenation operator(+):
+-------------------------------------
+1. The only overloaded operator in java is '+' operator. Sometimes it acts as a addition operator and sometimes it acts as string concatenation operator.
+2. If one argument is String type then + operator acts as string concatenation operator. If both arguments are number type, then operator acts as arithmetic operator like addition operator.
+
+
+3)Increment and Decrement operators:
+---------------------------------------
+++,--
+
+pre-increment           post-increment
+-----------------------------------------
+ syntax                    syntax
+ ++a                       a++
+
+pre-decrement           post-decrement
+-----------------------------------------
+syntax                    syntax
+ --a                       a--
+
+expression  |  initial value of x   |   value of y   |   final value of x
+============================================================================
+y=++x;             10                    11                  11
+y=x++;             10                    10                  11
+y=--x;             10                     9                   9
+y=x--;             10                    10                   9
+============================================================================
+
+4)Relational operators:
+--------------------------
+<,<=,>,>=,==,!=
+
+
+5)Bitwise operators:
+------------------------
+AND, OR, E-OR(XOR)
+
+AND: If both are true return true.
+=====================================
+a            b              a&b
+0            0               0
+0            1               0
+1            0               0
+1            1               1
+=====================================
+  
+OR: If both are false return false.
+======================================
+a            b              a|b
+0            0               0
+0            1               1
+1            0               1
+1            1               1
+======================================
+
+E-OE: If both are different return false.
+=========================================
+a            b              a^b
+0            0               0
+0            1               1
+1            0               1
+1            1               0
+==========================================
+
+
+6)Logical operators:
+------------------------
+AND(&&),OR(||),NOT(!)
+
+AND: If both are true return true.
+=====================================
+a            b              a&&b
+0            0               0
+0            1               0
+1            0               0
+1            1               1
+=====================================
+  
+OR: If both are false return false.
+======================================
+a            b              a||b
+0            0               0
+0            1               1
+1            0               1
+1            1               1
+======================================
+
+NOT:
+=======================
+a          !a
+0          1
+1          0
+========================
+
+7)Assignment operators:
+-----------------------------------
++=,-=,*=,/=,%=
+
+a=a+b;=>a+=b;
+a=a*b;=>a*=b;
+
+8)Ternary or conditional operators(?):
+--------------------------------------
+Syntax:
+========
+(condition)?exp1:exp2
+
+If the condition is true, exp1 will be evaluated. 
+If the condition is false, exp2 will be evaluated.
+
+
+
+
+
+
+
+
+
