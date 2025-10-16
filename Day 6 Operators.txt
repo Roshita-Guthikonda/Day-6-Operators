@@ -79,28 +79,28 @@ AND, OR, E-OR(XOR)
 AND: If both are true return true.
 =====================================
 a            b              a&b
-0            0               0
-0            1               0
-1            0               0
-1            1               1
+false      false           false               
+false      true            false
+true       false           false
+true       true            true
 =====================================
   
 OR: If both are false return false.
 ======================================
 a            b              a|b
-0            0               0
-0            1               1
-1            0               1
-1            1               1
+false          false        false
+false          true         true
+true           false        true
+true           true         true
 ======================================
 
 E-OE: If both are different return false.
 =========================================
 a            b              a^b
-0            0               0
-0            1               1
-1            0               1
-1            1               0
+false           false      false
+false           true       true
+true            false      true
+true            true       false
 ==========================================
 
 
@@ -111,26 +111,26 @@ AND(&&),OR(||),NOT(!)
 AND: If both are true return true.
 =====================================
 a            b              a&&b
-0            0               0
-0            1               0
-1            0               0
-1            1               1
+false      false           false               
+false      true            false
+true       false           false
+true       true            true
 =====================================
   
 OR: If both are false return false.
 ======================================
 a            b              a||b
-0            0               0
-0            1               1
-1            0               1
-1            1               1
+false          false        false
+false          true         true
+true           false        true
+true           true         true
 ======================================
 
 NOT:
 =======================
 a          !a
-0          1
-1          0
+false      true
+true       false
 ========================
 
 7)Assignment operators:
@@ -148,6 +148,7 @@ Syntax:
 
 If the condition is true, exp1 will be evaluated. 
 If the condition is false, exp2 will be evaluated.
+
 
 
 
